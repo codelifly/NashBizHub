@@ -1,0 +1,1000 @@
+﻿NashBizHub Business Platform Proposal
+Detailed client scope for buying selling renting and contract opportunities
+Prepared for NashBizHub
+23 October 2026
+Version 1 for scope review
+NashBizHub will bring business owners, buyers, tenants, operators and brokers into one platform. Customers will register once, choose what they want to do, and receive a guided experience from discovery through inquiry, negotiation and handover.
+This proposal describes the complete proposed product in plain language. It includes public website pages, customer accounts, business listings, rental and contract workflows, staff operations, administration, reporting and the supporting React and Laravel PHP technology.
+All names, listings, figures, dates and records in the examples are fictional. They demonstrate how the proposed system would work and are not real opportunities or market valuations. No development charges, subscription prices or implementation quotation are included.
+The document is a proposed scope, not a statement that these features already exist. It separates the full core system from optional expansion modules and service integrations that depend on provider availability.
+Reading guide and scope map
+The main proposal is written for business decision makers. The technology appendix explains the tools the development team would use and the business purpose of each. Section numbers remain useful even if Word changes page numbering during editing.
+Sections
+What you will understand
+1 to 4
+Business purpose, transaction types, users and website navigation
+5 to 8
+Registration, verification, profiles and listing creation
+9 to 12
+Sales, business rentals, premises leases and contract opportunities
+13 to 16
+Search, detail pages, inquiries and confidential documents
+17 to 20
+Visits, offers, agreements, handover and ongoing obligations
+21 to 24
+Broker operations, staff CRM, support and administration
+25 to 28
+Commercial features, communications, reporting and expansion
+29 to 32
+Permissions, business rules, sample journeys and delivery acceptance
+33 to 36
+Technology, integrations, implementation dependencies and glossary
+How to interpret the scope
+Core means proposed as part of the complete NashBizHub platform. Core work can still be delivered in successive releases so that each workflow can be demonstrated and tested properly. Optional means an expansion that can be enabled without changing the main business model. Provider dependent means an external account, service approval or integration is required.
+The proposed starting assumption is an English language, mobile responsive marketplace with configurable countries, currencies and time zones. Illustrative examples use Tennessee and US dollars, but the launch country is not fixed by this proposal. Country specific forms and approved agreement templates must be configured for each enabled market.
+NashBizHub is assumed to facilitate introductions and manage transaction records. It does not automatically become the owner, landlord, employer, licensed intermediary or holder of customer transaction funds. If the business intends to perform any of those roles, the relevant operating process must be defined separately before activation.
+The platform will have one shared customer identity with multiple roles. A person may buy one business, sell another and apply to operate a third without creating duplicate accounts.
+1 Business purpose and proposed outcome
+NashBizHub should work as a business opportunity marketplace and a transaction coordination system. The public website attracts customers and helps them compare opportunities. The private workspace helps the parties progress from initial interest to an agreed outcome. Staff receive a clear view of outstanding actions rather than relying on scattered emails and spreadsheets.
+What customers should be able to achieve
+Buyers find businesses that match their location, industry, experience and investment requirements, then contact the right owner or broker.
+Owners advertise a business for sale, offer it to an operator on rent, or invite proposals for a management contract.
+Landlords advertise business premises without implying that an operating business is included.
+Operators describe their experience, submit applications and manage accepted rental or management agreements.
+Contract providers publish a defined scope of work and compare eligible contractor proposals.
+Brokers represent authorized clients and coordinate multiple listings and conversations.
+What NashBizHub should gain
+The system should create a consistent record of every listing, customer, inquiry, appointment, offer and agreement. Management should be able to identify unanswered leads, incomplete listings, expiring agreements and the sources that generate qualified interest.
+Success should be measured through useful outcomes: published listings with complete information, timely responses, qualified applications, accepted offers, completed handovers and repeat customers. A high number of website visits alone is not evidence of successful transactions.
+Example
+Harbor Foods owns two fictional cafÃ©s. It offers one for sale and invites an operator to manage the other. The same company account holds both opportunities, but each has different fields, applicants and agreement requirements. A buyer cannot accidentally submit a purchase offer through the operator application form.
+Completion standard
+A customer should always know which opportunity type they are viewing, what action is available, what information they must provide and what happens next. Staff should be able to trace who changed a record and why.
+2 Opportunity types and business boundaries
+The platform should distinguish the legal and commercial subject of each opportunity before collecting detailed information. A single generic listing form would produce confusing comparisons and incomplete agreements.
+Opportunity
+What the customer is seeking
+Primary action
+Business for sale
+Ownership of a business or specified business assets
+Send inquiry or purchase offer
+Business on rent
+Time limited operation of a business and specified assets
+Apply to rent and operate
+Premises for lease
+Use of commercial property without assumed business transfer
+Request viewing or lease application
+Business management contract
+Appointment to operate or manage an owner's business
+Submit operator proposal
+Service contract or tender
+A supplier to complete defined work
+Submit bid or quotation
+Buyer or operator requirement
+Matching opportunities from other members
+Submit matching opportunity
+Separate ownership from use
+For a sale, the listing identifies what is included and whether it concerns assets or an ownership interest. For a business rental, it states which equipment, brand rights, stock, premises rights and responsibilities are included. For premises, it explains space and permitted uses. A management contract identifies who retains ownership and who is responsible for operations.
+Linked opportunities
+An owner can advertise a business for sale and as a rental alternative. These should be linked offers under one business record, not unrelated duplicate listings. The system warns the owner when one arrangement progresses far enough to conflict with another. Closing one offer can pause the alternatives after confirmation.
+Contract interpretation
+This proposal covers both meanings of contract basis: running another person's business under a management arrangement and bidding for a service contract. They share accounts and messaging but have separate applications, comparison criteria and completion records.
+Example
+A laundromat offered with machines and operating rights is a business rental. An empty shop suitable for a laundromat is a premises lease. Search filters, labels and forms must preserve that difference throughout the system.
+3 Users organizations and responsibilities
+Access should be based on the person's role, the organization they represent and the particular record they are permitted to use. Membership of a company alone must not give access to every confidential deal.
+Role
+Main permitted activities
+Visitor
+Browse public listings and information pages
+Buyer
+Save searches, inquire, request documents and submit offers
+Seller or owner
+Create listings, qualify interest and progress own deals
+Tenant or operator
+Apply for rental or management opportunities
+Contractor
+Maintain capability profile and submit proposals
+Broker or agent
+Manage specifically assigned client listings
+Organization manager
+Invite team members and assign responsibilities
+Staff adviser
+Manage assigned leads, tasks and customer assistance
+Moderator
+Review content and verification submissions
+Support officer
+Resolve assigned support cases
+Finance officer
+Manage platform billing and reconciliations
+Administrator
+Configure operations within granted permissions
+System owner
+Control privileged access and critical settings
+Company accounts
+A company profile contains its public identity, private registration details, branches, authorized representatives and team. Invitations expire and must be accepted by the intended recipient. Removing a member immediately removes future access while retaining their historical actions in the audit record.
+Acting for someone else
+A broker or staff adviser should record who authorized representation, the listings covered and any expiry. Changing representation must preserve previous communications and notify the appropriate owner. The system should prevent two users from silently taking ownership of the same listing.
+Example
+Harbor Foods invites a finance adviser to one cafÃ© sale. The adviser may answer financial questions and upload approved reports, but cannot change the asking price or view the company's unrelated management opportunity.
+Accountability
+Privileged staff actions require a reason where appropriate. Support staff should not automatically see identity documents or confidential financial files simply because they can answer customer tickets.
+4 Public website pages and navigation
+The main navigation should use customer language: Buy a Business, Sell a Business, Rent a Business, Contracts, Find a Broker and Resources. A prominent Post an Opportunity action starts the appropriate listing flow. Sign In and Register remain visible on desktop and mobile.
+Page group
+Content and customer actions
+Home
+Opportunity tabs, search, categories, locations, featured listings and guidance
+Buy a Business
+Sales discovery, buyer guidance and search entry
+Sell a Business
+Selling steps, required information and start listing
+Rent a Business
+Operating rentals with an explanation of inclusions
+Commercial Premises
+Separate lease search and property guidance
+Contracts
+Management opportunities and service tenders in separate tabs
+Search results
+Filters, sorting, saved search and list or map view
+Listing details
+Opportunity information and relevant application actions
+Categories and locations
+Useful industry and regional landing pages
+Broker directory
+Search representatives and inspect approved profiles
+How it works
+Separate guides for buyers, sellers and operators
+Resources
+Articles, checklists, glossary and downloadable guides
+About and Contact
+Company information and general inquiries
+Help and policies
+FAQs, support, privacy, terms and reporting process
+Page behavior
+Every page should have a clear next action, readable mobile layout and helpful empty states. A category with no listings should offer a saved search or requirement submission rather than showing an unexplained blank screen. Broken or withdrawn listing links should explain the status and offer relevant alternatives without revealing confidential history.
+Search visibility
+Public listing titles, summaries, category pages and location pages should be readable by search engines. Private accounts, document rooms, applications and personal information must be excluded from public indexing. Paid placements should be labeled Sponsored or Featured and visually distinguishable from ordinary results.
+Example
+A visitor selects Rent a Business, chooses Restaurant and Nashville, then sees operating rentals. Premises-only results appear only if the visitor explicitly includes commercial premises.
+5 Registration login and account recovery
+Registration should be short enough to complete on a phone. Detailed business qualification belongs later in the relevant journey rather than being demanded from every new visitor.
+Field
+Requirement and behavior
+Full name
+Required and editable in profile
+Email
+Required, verified and checked for duplicates
+Mobile and country code
+Required when an inquiry or application needs contact verification
+Password
+Required for password accounts with clear strength guidance
+Primary interest
+Buy, sell, rent, offer rental, manage, offer contract or broker
+Country and time zone
+Used for relevant forms, dates and notifications
+Terms acceptance
+Required with version and acceptance date stored
+Marketing preference
+Optional and separate from account acceptance
+Customer journey
+The customer enters basic details, verifies their email and arrives at a dashboard tailored to their selected interest. They can add other interests later. If registration began from a listing, the system returns them to that listing and preserves their unfinished inquiry.
+Login includes password recovery, session management and clear error messages. Recovery links expire and can be used once. Sensitive actions such as changing ownership, bank-related instructions or security settings require renewed authentication. Staff and privileged users must use two-factor authentication; customers can enable it too.
+Duplicate and incomplete accounts
+An existing email should lead to sign in or recovery instead of creating another customer. Unverified accounts may save drafts but cannot publish or send unrestricted messages. Repeated verification attempts are limited. Social sign in is an optional convenience and must not silently merge accounts without confirming ownership.
+Example
+Maya registers to buy a cafÃ©, saves two searches and later adds an operator profile. Her existing favorites and conversations remain attached to the same account.
+Acceptance example
+After a password reset, expired links fail safely, the new password works and the user can revoke other active sessions. A registration error does not erase fields already completed.
+6 Profiles verification and trust indicators
+A complete profile should help the other party assess relevance without exposing unnecessary personal information. Public profile information and private qualification evidence must be stored and displayed separately.
+Buyer and operator profiles
+Collect preferred industries, target locations, investment range, available funds range, financing requirements, experience, desired start date and preferred opportunity types. Operators additionally provide management experience, relevant qualifications, available team and references. A customer controls whether an approved public requirement profile is visible.
+Owner and company profiles
+Collect business name, trading name, registration country and number, business address, authorized contact and proof of authority. Public contact details are selectable; registration evidence remains restricted. Brokers provide agency details, service locations, specialties and relevant professional credentials where applicable.
+Verification label
+Meaning to show to users
+Email verified
+The account confirmed access to its email
+Phone verified
+The account confirmed access to its phone
+Identity checked
+A defined identity review was completed on a stated date
+Business authority reviewed
+Evidence of authority was reviewed for a particular business
+Financial evidence reviewed
+Specified evidence was reviewed with a date and defined limitations
+Review workflow
+Submitted evidence enters a queue. A reviewer approves, requests corrections or declines with a reason. Expired evidence triggers re-review and removes the corresponding current badge. Users can appeal a decision through support. A badge must never imply guaranteed profitability, unrestricted licensing or universal financial approval.
+Example
+Maya has verified email and phone. Harbor Foods has business authority reviewed. These are different checks; neither makes the cafÃ©'s revenue independently audited.
+Data minimization
+Identity documents should not be visible to listing owners. Where an approved provider can return a verification result without the platform retaining the full document, that should be preferred. Retention periods and reviewer access are configured before launch.
+7 Listing creation and publication
+Listing creation should be a guided sequence with automatic draft saving, a progress indicator and a final preview. Customers see fields relevant to their chosen opportunity type and industry.
+Guided steps
+Select the opportunity type and the business or property it concerns.
+Confirm ownership or authority to advertise.
+Enter a public title, category, location and summary.
+Complete the relevant financial, rental or contract fields.
+Upload public images and separately upload private documents.
+Set confidentiality, contact preferences and application requirements.
+Review the public preview, declare accuracy and submit for moderation.
+The platform gives each listing a reference such as NBH-S-1001. Missing required fields are explained beside the field. The preview shows exactly what a visitor sees, including hidden address or undisclosed financial labels.
+Publication states
+Draft becomes Submitted, then Under Review. A moderator can request Changes, Reject with a reason or Approve for publication. Approved listings may be Active, Paused, Under Negotiation, Completed, Expired, Withdrawn or Suspended. Completion labels depend on type: Sold, Rented, Leased or Contract Awarded.
+Editing a live listing
+Minor approved changes can publish immediately under policy. Material changes to ownership, transaction type, financial figures or confidential identity return to review. The last approved version remains visible until replacement approval unless safety or accuracy requires immediate withdrawal. Each revision records author, time and reason.
+Example
+An owner uploads a photograph showing the cafÃ©'s name while requesting confidentiality. The reviewer returns the listing with a specific correction request. The owner replaces the photo and resubmits without re-entering the entire form.
+Completion standard
+No listing becomes public because a customer merely purchased promotion. Approval, publication and payment states are independent. Rejected or suspended content cannot reappear through an automated renewal job.
+8 Common listing fields and category variations
+The shared listing foundation creates consistency while category templates collect the information buyers and operators actually need.
+Field group
+Information collected
+Identity
+Listing reference, title, business record, advertiser and opportunity type
+Classification
+Industry, category, subcategory, keywords and operating model
+Location
+Country, state, city, postal area and public location precision
+Business description
+Activities, customers, history, strengths and reason for opportunity
+Operations
+Trading hours, staffing, owner involvement and training available
+Commercial information
+Currency, relevant amounts, periods and disclosed or withheld status
+Inclusions
+Equipment, inventory, premises rights, brand, website and other assets
+Media
+Cover image, gallery, captions, video link and approved brochure
+Contact
+Assigned owner or broker, preferred channel and response availability
+Privacy
+Hidden identity, approximate location and restricted attachments
+Review
+Accuracy declaration, authority evidence and moderation status
+Industry specific questions
+Restaurants can include seating, kitchen equipment, cuisine and permitted operating arrangements. Gas stations can describe fuel supply arrangements, pumps and shop inclusion. Manufacturing can include production capacity, machinery and technical staffing. Online businesses can record website ownership, traffic evidence and transfer dependencies. Hotels can include room count, facilities and operating model.
+These details are configurable questions, not assertions that licenses or supplier agreements automatically transfer. The form should ask whether consent, renewal or independent confirmation is needed.
+Validation and clarity
+Unknown, not applicable and confidential are different answers. Financial amounts require a currency and reporting period. Monthly and annual amounts cannot share an unlabeled field. Uploads have approved formats and size limits; failed uploads can be retried without losing the draft.
+Example
+A restaurant lists 60 seats, six employees and a leased location. It marks the liquor-related permission as requiring separate confirmation. The customer sees these facts together rather than assuming the business sale includes every permission.
+9 Buying and selling a business
+The sales module supports discovery, qualification, offers and completion tracking. It should explain what is proposed to transfer before asking the buyer to make an offer.
+Sales field
+Explanation for the customer
+Sale basis
+Business assets, ownership interest or another approved structure
+Asking amount
+Public amount, range or price on application
+Revenue
+Amount, reporting period and whether seller reported or supported
+Earnings measure
+Clearly labeled profit, EBITDA or owner benefit measure
+Inventory
+Included, additional or to be valued at handover
+Equipment and assets
+Included items and any exclusions
+Property position
+Owned property included, separately offered or leased premises
+Owner involvement
+Current duties and expected transition
+Financing
+Whether seller financing may be discussed, with no approval implied
+Conditions
+Required consents, exclusions and target completion date
+Buyer workflow
+The buyer searches and saves opportunities, sends an inquiry and supplies the requested qualification. After any confidentiality agreement and owner approval, they review documents, arrange a visit and submit an offer. Negotiations proceed through recorded versions. The deal then moves into checks, agreement preparation and completion tasks.
+Seller workflow
+The seller reviews interest, assigns an owner to each lead, requests relevant information and decides which buyers receive documents. They can decline an inquiry with a professional response. Accepted preliminary terms do not automatically mark the business sold.
+Fictional example
+NBH-S-1001, Riverside CafÃ©, is advertised at USD 420,000 with seller reported annual revenue of USD 780,000 and owner benefit of USD 135,000 for the stated reporting year. Inventory is valued separately. Maya offers USD 395,000 subject to document review and premises consent. These are demonstration figures only.
+Completion standard
+Only an authorized user can record completion after required tasks are satisfied. The record stores the outcome and evidence privately; public display of the achieved sale amount requires explicit permission.
+10 Renting an operating business
+Business rental allows an operator to run an existing business for a defined period while ownership remains with the owner, subject to the agreed arrangement. The listing must explain exactly what the operator receives and must do.
+Rental field
+Required detail
+Included rights and assets
+Business use, equipment, brand, stock and premises arrangements
+Rental basis
+Fixed payment, revenue share or approved combination
+Payment period
+Weekly, monthly or another clearly labeled interval
+Security arrangement
+Deposit or guarantee terms and handling party
+Agreement period
+Start date, initial term, extension options and notice periods
+Operating responsibilities
+Staffing, stock, utilities, insurance, repairs and reporting
+Owner responsibilities
+Asset condition, agreed support and retained obligations
+Applicant requirements
+Experience, available resources and required evidence
+Handover and return
+Inventory, condition records, keys and end-of-term checks
+Application process
+An interested operator submits experience, intended operation plan, availability, references and requested terms. The owner compares applications, arranges discussions and records a preferred operator. Documents and responsibilities are agreed before signing and handover.
+Ongoing administration
+The agreement workspace tracks scheduled obligations, recorded payments, maintenance issues, inspections, notices, renewal decisions and return tasks. The first release can record payments confirmed by the parties without collecting rental money through NashBizHub. Any future collection service requires a separately enabled provider workflow.
+Fictional example
+NBH-R-2001 offers a laundromat with 24 machines for a 24-month operating term. The example rental is USD 4,500 per month, with utilities and routine servicing assigned to the operator. A machine list and condition photographs become part of handover records. No assumption is made that the premises owner has already consented.
+Essential distinction
+A rent payment status is not the same as a listing subscription status. Ending advertising does not terminate an active business rental agreement or erase its records.
+11 Commercial premises leasing
+Commercial premises require a separate form and search category because the customer may receive only space, with no customers, staff, brand or trading business.
+Property information
+Record property type, location, floor area with units, available area, permitted or proposed use, existing fit-out, access, parking, accessibility information, utilities, availability date and viewing contact. The landlord can hide the exact address until a viewing is approved.
+Commercial information
+State the rent basis and period, deposit terms, proposed lease length, renewal options, outgoings, fit-out responsibilities, maintenance obligations and whether amounts include relevant taxes. These fields describe the offer and must not be presented as a standardized legal lease.
+Lease application
+Applicants provide business activity, proposed use, intended occupancy date, organization details, supporting references and any requested guarantor information. Sensitive evidence is visible only to authorized reviewers. The landlord can request additional information and record proposed changes.
+Linked business sale or rental
+A business sale may depend on obtaining a new premises lease or consent to an existing arrangement. The two records should be linked with a dependency task. Staff must be able to see that the business transaction is awaiting premises confirmation without treating that condition as already fulfilled.
+Fictional example
+NBH-L-2101 is a 1,800 square foot retail unit in Nashville. A cafÃ© operator seeks a five-year term and requests confirmation that the intended food preparation use is acceptable. The premises listing does not claim to include a trading cafÃ© or customer base.
+Handover
+The workspace records condition evidence, keys, access devices, meter readings, agreed fit-out tasks and responsible contacts. Renewal and expiry reminders use the agreement's dates rather than the advertisement's publication period.
+Completion standard
+The search interface can compare premises by area and rent basis without mixing those figures with business asking prices or operating business rentals.
+12 Management contracts and service tenders
+Contract opportunities have two distinct forms. A management contract appoints an operator to run a business. A service tender appoints a supplier to deliver defined work. Both require clear scope, selection criteria and agreement milestones.
+Field
+Management opportunity
+Service tender
+Subject
+Business to be managed
+Work to be delivered
+Scope
+Operating duties and decision rights
+Deliverables and exclusions
+Applicant evidence
+Management record and operating plan
+Capability, team and relevant work
+Commercial model
+Management fee or revenue arrangement
+Fixed, unit based or milestone quotation
+Duration
+Operating term and review dates
+Delivery period and milestones
+Assessment
+Experience, plan and proposed terms
+Compliance, quality, timing and terms
+Completion
+Transition or end-of-term handback
+Accepted deliverables and closeout
+Proposal workflow
+The owner publishes the opportunity and closing date. Applicants ask questions through a controlled channel. Clarifications that affect all bidders are distributed consistently. A bidder saves a draft and submits before the deadline. The system records the exact submitted version and time zone.
+The owner compares eligible submissions, records assessment notes, shortlists applicants and issues an award or decline. A correction after the deadline follows an explicit controlled process, not a silent overwrite. Sealed bids, if selected, remain inaccessible until the published opening point.
+Fictional management example
+NBH-M-3001 seeks an operator for a 32-room motel for 36 months. Applicants submit staffing, maintenance and guest-service plans. Performance measures include reporting timeliness and agreed service standards; the system does not guarantee occupancy.
+Fictional service example
+NBH-T-4001 invites cleaning proposals for five stores over 12 months. The tender includes service frequency, site schedules, evidence requirements and an evaluation checklist. Applicants cannot see competitors' quotations.
+Completion standard
+An award creates an agreement workspace. It does not automatically authorize payment, prove work completion or create an employment relationship.
+13 Search comparison and opportunity matching
+Search should make meaningful differences easy to understand. The selected opportunity type determines which filters and comparison fields are shown.
+Search controls
+Customers can filter by keyword, industry, category, country, state, city, radius, opportunity type, disclosed amount range, date added and selected operational characteristics. Sales can add revenue and earnings filters. Rentals can add term and commencement date. Contracts can add submission deadline, duration and capability requirements.
+List and map views should agree about which results are included. Confidential listings use an approximate area and must never expose precise coordinates through the page data. Sorting can include newest, relevant match and applicable amount. Sponsored results are labeled and not misrepresented as the best commercial match.
+Comparison and saved activity
+Customers can compare a manageable number of opportunities side by side. Unknown figures remain unknown. Different currencies require explicit conversion context or separate comparison; the platform should not silently treat USD and AUD amounts as equivalent. Monthly rents and annual revenue must retain their labels.
+Saved searches retain criteria, notification frequency and active status. A customer can pause or delete alerts. New matches, material changes and reopened listings should use distinct notification rules to avoid repeated duplicates.
+Requirements board
+A registered buyer or operator can submit a requirement such as restaurant businesses in a selected region, experience level and desired timeframe. Public requirements use approved summaries; personal contact details and financial evidence remain private. Owners respond with linked opportunities, and customers can reject irrelevant approaches.
+Example
+Maya saves a search for cafÃ©s within 30 miles of Nashville and a stated acquisition range. She receives a daily digest with three new matches, not three separate emails for edits to the same listing.
+Completion standard
+Matching explains the reasons for a result, such as location and industry. It must not describe an algorithmic recommendation as a financial endorsement or guaranteed fit.
+14 Listing detail pages and customer actions
+Each detail page should answer three questions: what is offered, what is known about it and how the customer can progress. The page layout changes by opportunity type while keeping familiar navigation.
+Recommended page order
+Start with title, category, location precision, opportunity type, current status and key commercial information. Follow with an image gallery, summary, operating details, inclusions, exclusions, financial or rental information, relevant dates and advertiser identity. Finish with applicable documents, related opportunities and a report-listing action.
+Actions by customer intent
+For sales, show Send Inquiry, Save, Compare, Request Documents and, when eligible, Submit Offer. For rentals, show Apply to Operate and Request Viewing. For management contracts, show Submit Proposal. For service tenders, show Ask a Question, Download Approved Brief and Submit Bid.
+Actions that require an account should return users to the same point after sign in. Private fields should not appear in public page source, downloadable brochures, metadata, email previews or map feeds. A hidden address cannot be revealed by opening a gallery caption or original photo metadata.
+Transparency
+Show whether figures are advertiser supplied, the reporting period, last confirmed date and the meaning of verification labels. A short definition should explain unfamiliar terms. A document request should explain the next step, such as completing qualification or accepting a confidentiality agreement.
+Example
+Riverside CafÃ© displays approximate location, asking amount, annual revenue and owner benefit with clear labels. The owner's name, exact premises and financial attachments remain restricted. Maya sees a message explaining that document access requires the owner's approval after qualification.
+Status behavior
+Sold or awarded pages should stop accepting new offers. Depending on the owner's publication preference, they can show a limited completion notice or be removed from browsing. Existing participants retain authorized access to their transaction history.
+15 Inquiries messaging and customer qualification
+Every inquiry should become a trackable record linked to the opportunity, sender, recipient and source. Customers should be able to communicate without exposing their email address publicly.
+Inquiry information
+Purpose
+Listing and customer reference
+Connect the conversation to the correct records
+Message and intended action
+Explain the customer's interest
+Experience and timing
+Help the advertiser assess relevance
+Funding or operating readiness
+Collect only relevant qualification details
+Consent choices
+Separate requested contact from marketing permission
+Assigned responder and due date
+Make follow-up responsibility clear
+Status and outcome
+Track response, qualification and next step
+Conversation features
+Support threaded messages, secure attachments, unread indicators, search, internal staff notes, approved response templates, block/report and conversation assignment. Internal notes are never included in customer messages or customer exports. Attachments are scanned and cannot be opened until accepted by the file checks.
+The sender receives an acknowledgement. The responsible owner or broker receives an alert. If the response target is missed, an internal reminder or escalation follows. New messages remain stored even if a live notification connection temporarily fails.
+Qualification workflow
+The owner can request a short questionnaire, references or evidence before granting sensitive access. The customer sees why each item is needed. A declined qualification retains a private reason and can offer a suitable next step. High inquiry volume must not bypass qualification controls.
+Example
+Maya sends an inquiry about NBH-S-1001. The broker requests her preferred completion timeframe and funding approach. The broker's internal note about follow-up is visible to the assigned team, while Maya sees only the customer-facing request.
+Completion standard
+Repeated clicks or a connection retry create one inquiry, not several duplicate leads. Blocking a user prevents new contact while retaining the existing record for authorized support review.
+16 Confidentiality agreements and document rooms
+The document room is a private workspace for approved participants. It should support staged disclosure rather than giving every registered customer immediate access to all business records.
+Access sequence
+The customer requests access, completes any qualification, receives the applicable confidentiality agreement, signs through the selected process and waits for owner approval where required. Access is granted to specified folders or documents with an expiry. A signed confidentiality agreement alone must not bypass the owner's approval rules.
+Document organization
+Typical folders include financial reports, asset schedules, premises documents, operating procedures, workforce summaries, licenses or permissions, supplier information and agreement drafts. Every file has an owner, version, upload date, description, access level and retention rule. Superseded files remain traceable but are clearly labeled.
+Controls
+Owners can grant, restrict or revoke access, set download permissions where supported, watermark generated copies and review access activity. Links expire and are tied to the authorized account. The system should explain that screenshots and already downloaded copies cannot be recalled by revoking future access.
+Identity evidence, unrelated employee details and customer databases should not be shared by default. Redacted versions can be prepared for early review, with fuller disclosure restricted to a later approved stage.
+Fictional example
+Maya signs confidentiality agreement NDA-501 for Riverside CafÃ©. The owner approves read access to annual financial summaries and an asset list for 14 days. Payroll records remain unavailable. When the owner uploads a corrected report, the room shows version 2 and notifies authorized reviewers.
+Completion standard
+A person with another buyer's file link receives no access. Removing a team member immediately blocks their future document access. Audit records show grants, revocations, views and downloads that the system can reliably observe.
+Agreement wording and signing requirements must be approved for the enabled jurisdiction. The software manages the process; it does not determine legal sufficiency automatically.
+17 Appointments visits and discussions
+Appointments should connect interested customers with owners, brokers and staff while keeping availability and confidentiality under control.
+Booking information
+Collect listing reference, appointment type, proposed time, time zone, duration, participants, meeting method, accessibility needs and notes. Supported types include telephone discussion, video meeting, site visit, document review and handover inspection.
+The organizer can publish available slots or request manual confirmation. The system checks conflicting confirmed appointments, adds travel or preparation buffers where configured and distinguishes Requested from Confirmed. A calendar invitation should contain only information authorized for the invited participants.
+Customer journey
+The customer requests a slot. The organizer confirms or proposes an alternative. Both receive reminders and can reschedule under the configured policy. After the appointment, staff record attendance, an outcome and the next task. No-show and cancellation reasons support operations reporting without automatically publishing negative customer reviews.
+Confidential visits
+For a confidential business, the exact address can be disclosed only after approval. The organizer may provide discreet arrival instructions. The customer should see whether staff or customers at the business are aware of the proposed transaction.
+Example
+Maya requests a cafÃ© visit for 10 November at 3 pm in the listing's local time zone. The broker proposes 4 pm. Maya accepts and receives a confirmed invitation. Her dashboard displays the appointment in her own time zone and clearly names the venue time zone too.
+Integration and fallback
+Calendar synchronization and video meeting creation are optional provider integrations. Basic scheduling must still work inside NashBizHub if an external calendar disconnects. A failed invitation delivery should be visible to staff and retried without creating a second appointment.
+Completion standard
+Two customers cannot reserve the same exclusive slot simultaneously. Rescheduling updates the existing booking and its reminders rather than leaving the old meeting active.
+18 Offers proposals and negotiation
+Offers and proposals need structured terms and a reliable version history. Chat alone is insufficient because participants must be able to identify which terms are current.
+Offer information
+Example use
+Opportunity and parties
+Identify the business and authorized participants
+Proposed amount and basis
+Purchase amount, rent period or proposal model
+Inclusions and exclusions
+Specify stock, equipment, rights or deliverables
+Conditions
+Document review, finance, consents or other agreed checks
+Dates
+Proposed start, completion and offer expiry
+Supporting documents
+Funding summary, operating plan or technical proposal
+Status and version
+Draft, Submitted, Countered, Accepted, Declined, Withdrawn or Expired
+Negotiation behavior
+The recipient can accept the current version, decline, request clarification or make a counterproposal. Each new version preserves the earlier record. An acceptance must identify the exact version, actor and timestamp. An expired or withdrawn offer cannot be accepted through an old link.
+The interface must distinguish agreement on preliminary commercial terms from an executed agreement and a completed transaction. Whether an offer can itself be binding depends on the approved workflow and wording for that market; the software must not assume all offers have the same legal effect.
+Multiple interested parties
+Owners may receive several offers. Each party sees only its own negotiation. If an exclusive stage is agreed, the system records its start, expiry and effect on other applications. Simultaneous acceptance requests must not create two incompatible awards for one exclusive opportunity.
+Example
+Maya offers USD 395,000 for Riverside CafÃ© with specific conditions. The owner counters at USD 405,000 and changes the training period. Maya accepts version 2. The system opens the transaction checklist while leaving the listing Under Negotiation until completion is recorded.
+Completion standard
+Notifications summarize the changed terms and link to the authoritative version. Email replies do not silently amend a structured offer without confirmation in the workspace.
+19 Agreements due diligence and handover
+After terms progress, the parties need a shared checklist of documents, decisions and outstanding conditions. Each task should have an owner, due date, evidence and completion status.
+Due diligence workspace
+Configure task templates by transaction type. A business sale may require financial review, asset confirmation, premises arrangements, permissions, stock reconciliation and transition planning. Rentals emphasize operating rights, condition records and responsibility allocation. Contracts emphasize scope, deliverables, reporting and acceptance criteria.
+Questions can be assigned to the relevant party with supporting attachments. A response can be marked reviewed, needing clarification or accepted. Completing a checklist item records a decision; it does not claim that NashBizHub independently certified the underlying business.
+Agreement preparation
+Use approved templates or upload an adviser-prepared agreement. Store draft versions, reviewers, signatories and signing order. Material changes after signing require a new version or recorded amendment rather than replacing the executed file. External signature status must be confirmed through the provider or a verified manual record.
+Handover
+Record inventory, assets, keys, access accounts, training sessions, premises condition, meter readings, outstanding tasks and receiving-party acknowledgement. Passwords should be transferred through an approved secure method, not stored in public notes or ordinary document attachments.
+Example
+Riverside CafÃ© has twelve handover tasks. Eleven are complete, but premises consent remains outstanding. The workspace displays the blocking task and prevents an ordinary user from marking the transaction completed. A privileged exception requires a reason and notification under the approved policy.
+Completion record
+Store actual completion date, authorized confirmation, relevant evidence and public listing outcome. Send appropriate notices, pause conflicting offers and retain the private record according to policy. Failed transactions can reopen the listing after owner confirmation without deleting the unsuccessful deal history.
+Boundary
+The platform coordinates records and signatures. Settlement, ownership registration and adviser review remain with the responsible parties unless a separately approved service is implemented.
+20 Ongoing rental and contract management
+Rentals and management agreements continue after the initial handover. They need an operational workspace rather than disappearing into a completed listing archive.
+Agreement register
+Store agreement reference, parties, linked listing, effective date, expiry, renewal options, notice dates, payment schedule, responsibility matrix and responsible manager. Agreement status may be Pending Start, Active, Notice Given, Renewal Pending, Completed, Terminated or Disputed.
+Obligations and milestones
+Create recurring responsibilities such as monthly reports, inspections, insurance evidence renewal, maintenance checks and service deliverables. Each item has a due date, accountable party, supporting evidence and review decision. Missed items generate reminders and, where appropriate, escalation.
+Payment records
+Record expected amount, period, due date, reported payment date, receipt evidence and verification status. Manual records are labeled Reported or Confirmed; they are not treated as gateway-confirmed transactions. Partial payments, disputes and adjustments need separate entries rather than overwriting the original obligation.
+Maintenance and variations
+An operator can report an asset fault, attach photographs and request action. The agreed responsibility determines who receives it. Changes to duties, duration or commercial terms create an amendment request with both parties' approval as required. Historical agreement versions remain available.
+Renewal and return
+Reminders precede notice deadlines. The parties can renew, negotiate or plan handback. End-of-term tasks include condition inspection, asset count, access removal, unresolved issues and deposit instructions for the responsible holder. A reminder must not automatically renew or terminate an agreement.
+Example
+The laundromat operator reports machine 14 as unavailable. The owner reviews the maintenance obligation, assigns a repair and records completion. At month 21, both parties receive a reminder to review the 24-month arrangement before the contractual notice deadline.
+Completion standard
+Advertising expiry, account membership expiry and agreement expiry remain separate events with separate consequences.
+21 Brokers advisers and organization teams
+Broker functionality should support professional representation without allowing access to unrelated owners' information. Organizations can manage several agents, branches and assigned portfolios.
+Broker profile and directory
+Approved public profiles show name, company, service regions, specialties, biography, languages, applicable credentials and active public listings. Customers can search by location and industry or request assistance. Badges explain the specific check performed and do not claim guaranteed transaction success.
+Owner appointment
+An owner can invite a broker or request a match. The platform records acceptance, representation scope, responsible agent and any expiry. The owner can retain agreed visibility over inquiries and progress. Ending representation stops future access while retaining records and an orderly reassignment process.
+Team workspace
+Managers can assign listings, distribute leads, set follow-up targets, review activity and reallocate work during leave. Agents can create drafts on behalf of authorized owners. Bulk import is available through a controlled template with preview, validation, duplicate detection and row-level error results.
+Adviser collaboration
+An accountant, lawyer or other adviser can be invited to a specific transaction with limited access. They should not require a full broker account simply to review an assigned document or task. The inviter and the adviser can see the boundaries of the invitation.
+Example
+Summit Business Partners has three agents. Agent A manages Riverside CafÃ©. Agent B covers a visit while Agent A is away but cannot browse unrelated confidential offers. The manager can reassign the lead with a recorded reason.
+Professional services referrals
+An optional directory can introduce finance providers, accountants or other advisers. Referral consent must identify the recipient and purpose. A customer inquiry should not be distributed to multiple third parties through an unrelated newsletter checkbox.
+Completion standard
+Bulk imports and team changes obey the same ownership, moderation and confidentiality rules as individual records.
+22 Staff CRM tasks and follow up
+The internal customer relationship workspace gives NashBizHub staff a complete operational view of assigned customers and opportunities. It should distinguish customer records, individual inquiries and actual transactions.
+Customer record
+Maintain name, organization, verified contact channels, interests, consent preferences, acquisition source, assigned adviser, tags and relationship history. One customer may have several inquiries and deals. Duplicate detection suggests potential matches, but merges require review and preserve original references.
+Lead pipeline
+A proposed inquiry pipeline is New, Assigned, Contact Attempted, Responded, Qualified, Meeting Arranged, Negotiation, Converted or Closed. A closed lead includes a reason such as not suitable, no response, duplicate or customer withdrew. A qualified lead is not automatically a completed transaction.
+Tasks and follow up
+Staff can create calls, reminders, document requests, meeting preparation and follow-up tasks with due dates, priorities and owners. Managers see overdue work and can reassign it. Automation can create a follow-up after an unanswered inquiry or notify a manager about an overdue high-priority case.
+Activity history
+The record shows messages, calls recorded by staff, appointments, status changes and linked support cases in time order. Staff notes remain internal. Sensitive notes have narrower access and should not appear in general spreadsheet exports.
+Example
+A customer asks about two businesses. The CRM holds one customer, two inquiry records and separate next actions. Closing the first inquiry as unsuitable does not close the second or remove the customer from the database.
+Operational controls
+Bulk actions require preview and confirmation. Imports show source and permission to use the data. Exports are permission controlled and logged. Automated messages respect customer consent and contact preferences rather than using every CRM entry as a marketing audience.
+Completion standard
+Every active inquiry has a responsible person or queue, and every overdue action can be identified without opening each record individually.
+23 Support complaints reviews and disputes
+Support should help customers resolve account, listing and transaction-process issues while keeping the platform's role clear.
+Support tickets
+Customers select a topic, describe the problem, link relevant listing or agreement references and attach safe supporting evidence. Each ticket receives a reference, priority, assigned team, response target and status. Suggested states are Open, Assigned, Waiting for Customer, Waiting for Third Party, Resolved and Closed.
+Reports and moderation
+Visitors and members can report misleading information, duplicate listings, suspected unauthorized advertising or abusive contact. Reports enter a review queue. Staff can request evidence, temporarily restrict visibility, notify the advertiser and record an outcome. A report is an allegation until reviewed, not an automatic public finding.
+Dispute records
+Participants can raise a dispute about access, communication, an obligation or a recorded payment. The system preserves relevant versions and documents, assigns a reviewer and tracks responses. It should not automatically determine legal liability, release externally held deposits or alter executed agreements.
+Reviews
+If reviews are enabled, eligibility should be tied to a defined interaction. Users can rate communication or service using structured criteria, provide comments and allow a response. Reviews are moderated for private information and abuse. A negative review cannot expose a confidential business identity or document.
+Example
+An operator disputes a maintenance responsibility. The support case links the agreement version and relevant task. Both parties provide evidence. Staff record assistance and the agreed next step without silently rewriting the contract.
+Escalation and appeal
+Policies define which issues go to an operational manager, security reviewer or external adviser. Customers can request review of a moderation decision. Suspension notices explain the applicable reason and available appeal route where appropriate.
+Completion standard
+Ticket access follows the customer's relationship to the record. A support reference alone must not allow another user to retrieve the conversation or its attachments.
+24 Administration and master records
+Administrators need configurable business rules and clear work queues. Configuration changes should be controlled so that an ordinary content editor cannot alter security or billing settings.
+Administration area
+Main controls
+Members and organizations
+Accounts, roles, invitations, restrictions and recovery assistance
+Listings
+Approval queues, revisions, status, expiry and duplicate review
+Verification
+Evidence review, requests for correction and badge expiry
+Transactions
+Assigned staff, progress, exceptions and outcome records
+Agreements
+Templates, review versions and reminder schedules
+Content
+Pages, articles, FAQs, banners, menus and media
+Commercial products
+Membership entitlements and promotion eligibility
+Communications
+Templates, consent categories and delivery failures
+Operations
+Support queues, escalation rules and staff assignments
+System oversight
+Integration health, audit history and approved exports
+Master records
+Manage countries, states, cities, time zones, currencies, industries, categories, subcategories, opportunity types, business structures, property types, units of area, asset categories, document types, lead sources, priorities, rejection reasons and task templates.
+Forms should support category-specific questions, explanatory text, required fields and conditional sections. Changes must be versioned. Removing a category already used by listings should archive it or require a controlled reassignment, not leave broken records.
+Approval and publishing
+Content editors can draft public pages. Authorized reviewers publish them. Agreement templates have separate approval and effective dates. Administrators can preview email templates using fictional records before enabling them.
+Example
+NashBizHub adds a Car Wash subcategory with questions about bays, equipment and water arrangements. Existing restaurant listings are unaffected. If the category is later retired, historical listings retain their original classification for reporting.
+Completion standard
+Critical changes identify the person, time, previous value, new value and reason. Confidential document contents and passwords are never copied into ordinary activity logs.
+25 Memberships promotions and platform billing
+The system can support a commercial model without fixing prices in this proposal. Management can configure products, access limits and advertising benefits after the operating model is approved.
+Proposed product types
+Products may include individual listing packages, broker portfolios, featured placements, buyer research membership and additional listing allowances. Each product needs a name, benefits, duration, eligibility and clear start and end rules. Paid promotion changes exposure, not verification status or moderation priority unless explicitly described.
+Membership lifecycle
+A customer selects a product, reviews terms and uses the approved payment provider. The system records Pending, Active, Payment Action Required, Overdue, Cancelled or Expired status as appropriate. Renewal reminders and cancellation consequences are shown clearly. Existing private transaction records must not vanish merely because promotion expires.
+Billing records
+The finance workspace supports invoices, provider references, receipts, adjustment records, refunds and reconciliation. A refund request, provider processing and confirmed refund are distinct states. Repeated payment notifications must not issue duplicate entitlements or receipts.
+Important separation
+Platform advertising and membership payments are separate from business purchase funds, rental deposits, operating rent or contractor settlement. The base proposal does not place those transaction funds into a NashBizHub wallet. If future collection or escrow is required, use an approved provider and a separately designed operational process.
+Example
+A broker activates a portfolio product and promotes three listings. One listing remains Under Review, so its paid entitlement is recorded but it is not published until approved. Ending the promotion removes featured placement while preserving authorized deal history.
+Optional commercial controls
+Management can enable trials, promotional codes, credits and sponsored category placements. Each has eligibility, expiry and audit rules. Promotions cannot bypass account restrictions or turn an unverified business into a verified one.
+No product prices, development costs or third-party charges are quoted in this document.
+26 Notifications marketing and content management
+Messages should be useful, timely and appropriate to the customer's relationship with NashBizHub. Transaction updates and marketing campaigns require different controls.
+Trigger
+Recipient and purpose
+Registration or recovery
+Account holder receives verification or recovery instructions
+Listing decision
+Advertiser receives approval or requested corrections
+New inquiry
+Assigned owner or broker receives a response task
+Document access change
+Participant receives an access update without confidential attachments
+Appointment change
+Confirmed participants receive revised scheduling details
+Offer or proposal change
+Relevant parties receive a link to the exact version
+Agreement deadline
+Responsible parties receive renewal or obligation reminders
+Support update
+Ticket participants receive progress information
+Saved search digest
+Opted-in customer receives relevant matching opportunities
+Channel rules
+In-app and email notifications form the core. SMS, WhatsApp and browser push can be enabled through approved providers and customer permissions. Customers choose frequency and channels where appropriate. Mandatory account-security notices remain distinct from optional promotional messages.
+Delivery tracking distinguishes queued, sent, provider accepted, failed and other supported outcomes. An accepted email is not proof that the recipient read it. Failed delivery creates a retry or staff action. Time-zone-aware reminders and quiet-hour preferences reduce inappropriate contact.
+Content workspace
+Editors manage guides, FAQs, category introductions, regional content and educational articles. Each item has author, reviewer, publication status, metadata and revision history. Marketing consent is recorded by purpose and source; opting out removes the customer from future eligible campaigns.
+Example
+Maya receives one daily saved-search digest but immediate notifications for a counteroffer and confirmed appointment. Her newsletter opt-out does not suppress a password recovery email she requested.
+Completion standard
+Every automated message has a defined trigger, audience and stop condition. Cancelled meetings, withdrawn offers and closed listings must not continue generating obsolete reminders.
+27 Dashboards reports and management decisions
+Dashboards should show the next useful action for each role. Reports should define their measures so that management does not confuse advertising activity with completed business outcomes.
+Customer dashboards
+Buyers see favorites, saved searches, inquiries, document requests, appointments and offers. Owners see listing status, incomplete drafts, new interest, overdue replies and active negotiations. Operators see applications and ongoing agreement obligations. Brokers see their assigned portfolio and team activity within permission limits.
+Management measure
+Definition or required distinction
+Active listings
+Approved and currently visible, by opportunity type
+Qualified inquiries
+Inquiries meeting the configured qualification rule
+Response time
+Time from inquiry receipt to first meaningful response
+Conversion
+Defined transition such as inquiry to accepted offer
+Completed transactions
+Explicitly recorded completions, not merely accepted offers
+Listing engagement
+Views, saves and inquiries with bot filtering where feasible
+Agreement performance
+Due, completed and overdue obligations
+Platform revenue
+Confirmed platform billing, separate from advertised business value
+Source performance
+Outcomes attributed under a documented attribution rule
+Report controls
+Filter by period, country, category, opportunity type, organization and assigned team. Use the same time-zone and status rules in dashboards and exports. Exports should include applied filters and generation date. Small or sensitive cohorts should not reveal confidential deal values in public market reports.
+Example
+A campaign generates 100 inquiries, 20 qualified conversations and three accepted offers. Management sees each stage separately. It does not report three completed sales unless completion evidence has been recorded.
+Operational targets
+Proposed service targets can cover response times, moderation turnaround and overdue-task reduction. Targets are agreed during implementation and presented as targets, not historical achievements or guarantees.
+Completion standard
+Staff can trace a dashboard count to the underlying authorized records. Reopened, duplicated or withdrawn records do not inflate performance figures silently.
+28 Optional expansion modules
+These additions extend the platform but should not delay correct delivery of buying, selling, renting and contract workflows. Each needs a separate activation decision and acceptance criteria.
+Franchise opportunities
+Add a brand directory, franchise profiles, investment requirements, territory interest and information requests. Distinguish new franchise opportunities from resale of an existing franchised business. Brand disclosure documents and approvals follow a separate process.
+Valuation and research
+Provide financial summaries, comparable records and guided estimates only when suitable licensed or permissioned data exists. Label assumptions, source dates and insufficient-data cases. A simple revenue multiplier is not a reliable universal valuation. Customers should be able to request professional assistance without being promised a guaranteed value.
+Finance and adviser referrals
+Introduce relevant providers using explicit referral permission. Record the recipient and information shared. Approval, underwriting and professional advice remain with the provider. A submitted referral is not approved financing.
+AI assistance
+Optional assistance can improve draft descriptions, summarize permitted documents and suggest relevant listings. Customers must review generated content. Confidential documents cannot be sent to an external AI service without an approved data arrangement and applicable permission. The assistant must not invent revenue, approvals, contract terms or verified status.
+International expansion
+Enable additional languages, localized forms, currency display and regional content when each market is ready. Preserve the original amount and currency; any converted amount needs a rate source and date. Machine translation should not become the authoritative executed agreement without review.
+Mobile and partner access
+The core website is responsive. A later installable web experience or native mobile app can reuse approved services. Partner feeds require documented authorization, field mapping, update rules and withdrawal handling. There is no assumption that listings can be copied from other marketplaces.
+Further options
+Referral programs, events, advanced research subscriptions and auctions can be assessed separately. Auctions need their own bidding and settlement rules and are not silently included in the standard offer workflow.
+29 Permissions privacy and operational reliability
+Security should be visible to customers through predictable access and dependable service. It must also apply behind the interface: hiding a button is not enough to protect a record.
+Information
+Default visibility
+Approved public listing
+Everyone
+Customer contact details
+Customer and authorized recipients
+Identity evidence
+Restricted verification team or approved provider
+Confidential financial documents
+Specifically approved transaction participants
+Bid or offer
+Submitting party and authorized receiving team
+Internal staff note
+Authorized internal staff only
+Billing record
+Account holder and authorized finance staff
+Audit history
+Restricted operational or security roles
+Privacy controls
+Provide consent history, account data requests, correction requests and account closure. Retention settings distinguish marketing data, operational records and agreements that must be retained under the approved policy. Closing an account does not silently erase the other party's necessary transaction history. Personal data should be minimized in logs, exports and analytics.
+Operational protection
+Use secure connections, protected storage, malware checks, login attempt limits, session expiry and strong privileged-account controls. Backups must include the database and private files, with restoration exercises and documented recovery responsibilities. Recovery objectives should be agreed and demonstrated before launch.
+Failure behavior
+If email is unavailable, the inquiry remains saved and delivery is retried. If search indexing is delayed, private or withdrawn content must still be blocked by authoritative access checks. If a signing provider fails, the agreement remains pending rather than falsely becoming signed.
+Example
+An owner revokes Maya's access to a document room. The next request is denied even if an old screen still shows a document title. The event is logged and the expired access cannot be restored by refreshing an old email link.
+Completion standard
+Testing must include attempts to access another organization's records, altered attachment links, removed-team-member sessions and exported data beyond a user's permissions.
+30 Critical business rules and dependencies
+These rules should be agreed early because they affect many screens and prevent contradictory outcomes.
+Rule
+Required system behavior
+One identity can have many roles
+Preserve activity when a customer adds a new role
+One business can have linked offers
+Warn about conflicting sale, rental or management outcomes
+Public and private fields are separate
+Never publish hidden data through search, brochures or notifications
+Payment is separate from approval
+A paid listing still needs the relevant publication approval
+Acceptance is separate from completion
+Track conditions, signatures and handover independently
+Verification has defined scope
+Show the check and date rather than an unlimited trust claim
+Confidential access is specific
+Apply participant, document, expiry and revocation rules
+Amounts require context
+Store currency, period and disclosure status
+External events can repeat
+Repeated payment or signature notifications do not duplicate actions
+Agreements survive advertising changes
+Preserve active obligations and authorized records
+Exclusive outcomes need protection
+Prevent incompatible simultaneous acceptance or awards
+Important changes are versioned
+Retain the exact terms reviewed, submitted or signed
+Dependency examples
+A buyer cannot receive private documents merely because their profile is complete; the document access rules must also be satisfied. An operator cannot begin an agreement merely because a listing is marked rented; signing and handover steps must be complete. A contractor's milestone is not accepted merely because an attachment was uploaded.
+Exception handling
+Authorized staff can handle unusual cases through a documented exception process. It should record the reason, approver, affected rule and notifications. Exceptions must not provide a general way to bypass permissions, rewrite signed records or conceal disputes.
+Stale information
+Owners should periodically confirm that a listing is still available. Stale listings can be reminded, paused and eventually archived under configured policy. Search alerts must not promote inactive opportunities.
+Completion standard
+These rules should be tested across the website, staff workspace, imports, exports, scheduled jobs and integrations, rather than only through the visible customer forms.
+31 Sample records and connected customer journeys
+The following fictional records form a demonstration dataset. Monetary figures describe sample opportunities, not development or platform charges.
+Reference
+Sample record
+Relevant outcome
+NBH-S-1001
+Riverside CafÃ© sale in Nashville
+Sale negotiation and conditional completion
+NBH-R-2001
+Laundromat operating rental with 24 machines
+Rental application and recurring obligations
+NBH-L-2101
+Retail premises of 1,800 square feet
+Viewing and premises lease
+NBH-M-3001
+Management of a 32-room motel
+Operator proposal and management agreement
+NBH-T-4001
+Cleaning services for five stores
+Tender evaluation and milestone acceptance
+CUST-101
+Maya Chen, buyer and prospective operator
+One account with two interests
+ORG-201
+Harbor Foods, fictional business owner
+Two listings with separate permissions
+BRO-301
+Summit Business Partners
+Assigned broker team
+Sale demonstration
+Maya registers, verifies her email and saves a cafÃ© search. She inquires about NBH-S-1001, completes qualification and signs NDA-501. The owner grants document access. After a visit, she offers USD 395,000. The owner counters at USD 405,000. Accepted terms open transaction DEAL-701 with premises consent still pending. The business remains Under Negotiation until the blocking conditions and completion tasks are resolved.
+Rental demonstration
+Daniel applies for NBH-R-2001, submits an operating plan and attends an inspection. The owner selects him, confirms inclusions and signs the approved agreement. Handover records the condition of 24 machines. Monthly obligations begin from the agreement start date; a later maintenance request links to machine 14.
+Contract demonstration
+BrightCare Services submits a proposal for NBH-T-4001 before the deadline. The owner compares eligible bids privately, records an award and creates milestone tasks. An uploaded service report enters review. The milestone becomes accepted only after the authorized reviewer approves it.
+Negative test examples
+A second buyer cannot open Maya's documents. A late bid is rejected or handled through the published exception rule. A duplicate payment notification grants no additional membership. A cancelled visit sends no obsolete reminder.
+32 Delivery stages and acceptance
+Build the platform in connected releases, with a working demonstration and customer review at each stage. The sequence describes dependencies, not a cost or calendar commitment.
+Stage
+Main delivery
+Evidence required to progress
+1 Business definition
+Countries, roles, forms, transaction meanings and policies
+Approved workflows and sample records
+2 Experience design
+Public pages, dashboards and guided forms
+Desktop and mobile journey review
+3 Marketplace foundation
+Accounts, profiles, listings, search and moderation
+Publish and discover each core listing type
+4 Customer engagement
+Inquiries, CRM, appointments and document access
+End-to-end qualified inquiry demonstration
+5 Transaction workspaces
+Offers, tenders, agreements and handover
+Sale, rental and contract acceptance scenarios
+6 Continuing operations
+Obligations, support, reporting and billing
+Renewal, failure and reconciliation scenarios
+7 Launch readiness
+Migration, training, security and recovery testing
+Business acceptance and operating handover
+8 Expansion
+Selected optional modules
+Separate agreed acceptance criteria
+Launch acceptance
+Test all main journeys with real role separation: visitor, buyer, owner, operator, broker and staff. Check required fields, draft recovery, currencies, time zones, notifications, revoked access, duplicate submissions and unavailable providers. Validate responsive behavior and keyboard navigation on agreed browsers and devices.
+Agree a representative load profile before performance testing, including listing volume, concurrent searches, active conversations and document sizes. Record measured response times and errors. Do not promise unlimited scale or a perfect speed score without a defined test environment.
+Handover deliverables
+Provide approved screens, source code, configuration instructions, deployment and recovery guide, user manuals, staff training, integration inventory, test results and a known-issues register. Credentials belong in the approved secret-management process rather than the proposal or source repository.
+Ownership decisions before launch
+NashBizHub confirms the launch markets, branding, commercial policies, contract templates, verification policy, support responsibilities, data retention, provider accounts and content. These are implementation inputs; they do not prevent preparing this full scope now.
+33 Technology architecture in plain language
+The required foundation is React for the customer and staff interfaces and Laravel PHP for the business rules and secure services. MySQL is proposed for structured records. The website should be organized as one maintainable platform with clearly separated functional modules.
+Component
+Business purpose
+React with TypeScript
+Consistent interactive pages, dashboards and guided forms
+Vite
+Builds and packages the React interface for deployment
+Laravel PHP
+Validates requests, enforces permissions and manages workflows
+MySQL
+Stores accounts, listings, inquiries, offers and agreements
+Redis
+Supports fast temporary data and background work queues
+Private object storage
+Holds protected documents separately from public media
+Search service
+Supports responsive keyword and filter discovery
+Background workers
+Process alerts, file conversions and scheduled actions
+Monitoring and backups
+Detect failures and support recovery
+Website rendering and search visibility
+React will power interactive experiences. Public listing and category routes should also deliver useful initial HTML through Laravel-rendered templates with React components where needed. This avoids making essential public content dependent on a blank browser-only shell. Private dashboards can operate as React application routes. Both use the same Laravel permissions and source records.
+This proposal does not require a Node.js business backend or Next.js. Node-based tooling may be used during frontend building and testing; production business services run in PHP. If full React server rendering is later chosen, its additional runtime and operating requirements must be assessed explicitly.
+Modular structure
+Separate identity, organizations, listings, search, inquiries, documents, offers, agreements, billing, notifications and reporting within the Laravel application. Begin with a modular application rather than separate services for every feature. Add infrastructure only when measured demand justifies it.
+Technology selection rule
+Use supported stable versions and lock a tested compatibility set at implementation. A package name is a proposed building block, not a guarantee that all requirements appear automatically after installation. Business rules, permissions and acceptance testing remain custom development.
+Reference basis: React build guidance and Laravel documentation listed in Section 35.
+34 Recommended addons and integration choices
+The following tools are proposed according to their purpose. Install only the selected tools needed for the enabled scope; do not add several competing packages for the same responsibility.
+Need
+Proposed tool or approach
+Scope
+Account sessions and API access
+Laravel Sanctum
+Core
+Password recovery and two-factor flows
+Laravel Fortify
+Core
+Roles and permissions
+Spatie Laravel Permission plus record policies
+Core
+Audit history
+Spatie Laravel Activitylog with sensitive-field exclusions
+Core
+File organization and image variants
+Spatie Laravel Media Library plus private storage policies
+Core
+Background job operations
+Laravel queues, Redis and Horizon
+Core
+Search indexing
+Laravel Scout with Meilisearch
+Core for large search scope
+Live message notifications
+Laravel Reverb with authorized channels
+Core messaging enhancement
+Frontend navigation and data
+React Router and TanStack Query
+Core interface candidates
+Forms and validation feedback
+React Hook Form and Zod plus Laravel validation
+Core interface candidates
+Accessible components
+A reviewed React component library and shared design system
+Core
+Platform subscriptions
+Laravel Cashier with Stripe if selected and supported
+Provider dependent
+Signatures
+Docusign API or one approved equivalent
+Provider dependent
+Email
+One transactional mail provider through Laravel Mail
+Provider dependent
+SMS or WhatsApp
+One approved messaging provider
+Optional channels
+Maps and address lookup
+Google Maps or Mapbox selected for launch coverage
+Provider dependent
+Identity checks
+Approved verification provider or controlled manual review
+Policy dependent
+Calendar and video
+Approved calendar or meeting provider
+Optional
+Reporting exports
+Maintained CSV and spreadsheet export tooling
+Core
+Testing and monitoring
+PHP tests, browser journey tests and error monitoring
+Core engineering
+Selection and dependency checks
+Confirm licenses, maintained versions, PHP and Laravel compatibility, data location, accessibility, provider limits and operational ownership before locking dependencies. Media tools do not automatically make documents private. Permission packages do not replace checks on every listing and organization. Search indexes must contain only permitted searchable fields.
+35 Integration controls and reference notes
+External services must be connected through controlled interfaces with clear failure behavior. NashBizHub remains responsible for its own record of what happened, even when a provider sends the notification.
+Required integration controls
+Verify incoming provider notifications, store the provider reference and prevent repeated events from applying the same action twice. Handle delayed and out-of-order events, retry temporary failures and provide an operational queue for unresolved cases. Separate test and production credentials. Never expose provider secrets in React browser code.
+For signatures, reconcile the exact agreement version and signatories before recording execution. For billing, confirm the relevant provider state before granting access. For messaging, retain the business event even if delivery fails. For maps, avoid transmitting confidential precise locations unnecessarily.
+Official reference material
+The sources below were checked during proposal preparation on 23 October 2026. They support component capabilities; the NashBizHub workflows in this document are proposed design decisions, not features supplied by these sources.
+React build guidance: https://react.dev/learn/build-a-react-app-from-scratch
+Vite build tooling: https://vite.dev/guide/
+Laravel Sanctum: https://laravel.com/framework/docs/12.x/sanctum
+Laravel Fortify: https://laravel.com/framework/docs/13.x/fortify
+Laravel Scout: https://laravel.com/framework/docs/13.x/scout
+Laravel Reverb: https://laravel.com/framework/docs/13.x/reverb
+Laravel Horizon: https://laravel.com/framework/docs/horizon
+Laravel package index: https://github.com/laravel/docs/blob/13.x/documentation.md
+Spatie permissions: https://spatie.be/docs/laravel-permission/v8/basic-usage/role-permissions
+Spatie activity history: https://github.com/spatie/laravel-activitylog/blob/main/docs/introduction.md
+Spatie media library: https://github.com/spatie/laravel-medialibrary
+Stripe event handling: https://docs.stripe.com/webhooks
+Stripe subscription events: https://docs.stripe.com/billing/subscriptions/webhooks
+Docusign developer resources: https://developers.docusign.com/
+Scope review outcome
+The client can use this proposal to agree the business journeys, core modules, optional expansions and operating responsibilities before detailed screen specifications and implementation. The next planning deliverable should map these agreed sections to screen designs, field-level acceptance rules and a release backlog, retaining the transaction distinctions established here.
+36 Plain language glossary
+These terms appear in the proposal or are commonly used when discussing the platform. They describe different functions and should not be treated as interchangeable.
+Term
+Meaning for the client
+Listing
+A published advertisement for one specific opportunity
+Inquiry or lead
+An expression of interest that needs a response
+Qualified inquiry
+Interest that meets the agreed screening requirements
+Deal or transaction
+A specific opportunity being progressed between identified parties
+NDA
+A confidentiality agreement setting out how information may be used
+Due diligence
+The checks a party performs before committing to or completing a transaction
+Document room
+A private area containing files for approved participants
+Revenue
+Business income from sales before deducting expenses
+EBITDA
+Earnings before interest, taxes, depreciation and amortization; not the same as cash available to an owner
+SDE or owner benefit
+A stated owner-oriented earnings measure that requires an explanation of adjustments
+Asset sale
+A proposed transfer of specified business assets rather than an automatic transfer of the whole company
+CRM
+The staff system for customer relationships, inquiries and follow-up work
+Moderation
+Reviewing submitted content before or after publication
+Verification
+A specific check of an account, document or authority claim
+Integration or API
+A controlled connection through which two software services exchange information
+Webhook
+An automatic notification from another service when an event happens
+Background job
+Work processed separately so that the customer does not wait on the screen
+Audit trail
+A history showing who performed an important action and when
+Two-factor authentication
+A second identity check in addition to the password
+Acceptance criteria
+Demonstrable conditions that show a feature works as agreed
+Example of the distinctions
+Maya's first message is an inquiry. After the owner reviews her suitability, it may become a qualified inquiry. Her accepted preliminary terms create a progressing deal. A signed agreement and completed handover support the final transaction outcome. None of these stages should be reported as another stage merely to increase dashboard totals.
+Reading financial information
+Financial labels should always identify the period, currency, source and any adjustments. The platform can organize these records and calculations, but customer and adviser review is still needed to understand what those figures mean for a particular opportunity.

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268 64" role="img" aria-label="NashBizHub">
+  <defs>
+    <linearGradient id="nbhLogoGrad" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5CB8FF"/>
+      <stop offset="55%" stop-color="#1E6EF4"/>
+      <stop offset="100%" stop-color="#0B3D91"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#nbhLogoGrad)"/>
+  <path d="M18 44V20.5c0-1.2.9-2.1 2.1-2.1h3.2c.7 0 1.3.3 1.7.9L36.8 36.8V20.5c0-1.2.9-2.1 2.1-2.1h3c1.2 0 2.1.9 2.1 2.1V44c0 1.2-.9 2.1-2.1 2.1h-3.1c-.7 0-1.4-.4-1.7-1L27.2 27.4V44c0 1.2-.9 2.1-2.1 2.1h-3c-1.2 0-2.1-.9-2.1-2.1z" fill="#ffffff"/>
+  <circle cx="46.5" cy="17.5" r="3.2" fill="#ffffff"/>
+  <path d="M43.8 19.6 38.2 24.2" stroke="#ffffff" stroke-opacity="0.55" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="78" y="32" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="24" font-weight="700" fill="#3A3A3C" letter-spacing="-0.03em">NashBizHub</text>
+  <text x="78" y="50" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="500" fill="#5A6B7D" letter-spacing="0.02em">Tennessee Business Marketplace</text>
+</svg>

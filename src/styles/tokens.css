@@ -1,0 +1,89 @@
+:root {
+  --brand-blue-light: #0088ff;
+  --brand-blue-dark: #0091ff;
+  --brand-blue-accessible-light: #1e6ef4;
+  --brand-blue-accessible-dark: #5cb8ff;
+  --text-body: #3a3a3c;
+  --text-heading: #3a3a3c;
+  --text-on-dark: #f6f8fc;
+  --ink-on-bright-blue: #081827;
+  --surface-page: #f7f9fc;
+  --surface-card: #ffffff;
+  --surface-subtle: #eff6ff;
+  --border-subtle: #dce4ee;
+  --action-fill: #1e6ef4;
+  --action-label: #ffffff;
+  --radius-control: 10px;
+  --radius-card: 16px;
+  --radius-dialog: 20px;
+
+  --color-success: #0f7a45;
+  --color-success-bg: #e8f7ef;
+  --color-warning: #9a6700;
+  --color-warning-bg: #fff6e0;
+  --color-error: #b42318;
+  --color-error-bg: #fef3f2;
+  --color-info: #1e6ef4;
+  --color-info-bg: #eff6ff;
+
+  --focus-ring: #1e6ef4;
+  --demo-banner-bg: #081827;
+  --demo-banner-fg: #f6f8fc;
+
+  color-scheme: light;
+}
+
+html.dark {
+  --brand-blue-light: #0091ff;
+  --brand-blue-dark: #5cb8ff;
+  --brand-blue-accessible-light: #5cb8ff;
+  --brand-blue-accessible-dark: #9dd4ff;
+  --text-body: #e8eef7;
+  --text-heading: #f6f8fc;
+  --text-on-dark: #f6f8fc;
+  --ink-on-bright-blue: #081827;
+  --surface-page: #0b1220;
+  --surface-card: #121a2b;
+  --surface-subtle: #182338;
+  --border-subtle: #2a3a52;
+  --action-fill: #1e6ef4;
+  --action-label: #ffffff;
+  --color-success: #3dd68c;
+  --color-success-bg: #123525;
+  --color-warning: #f5c451;
+  --color-warning-bg: #3a2e10;
+  --color-error: #ff8a7a;
+  --color-error-bg: #3a1614;
+  --color-info: #5cb8ff;
+  --color-info-bg: #152338;
+  --focus-ring: #5cb8ff;
+  --demo-banner-bg: #020617;
+  --demo-banner-fg: #f6f8fc;
+  color-scheme: dark;
+}
+
+html.high-contrast {
+  --text-body: #000000;
+  --text-heading: #000000;
+  --surface-page: #ffffff;
+  --surface-card: #ffffff;
+  --surface-subtle: #f0f0f0;
+  --border-subtle: #000000;
+  --action-fill: #0033cc;
+  --action-label: #ffffff;
+  --focus-ring: #000000;
+  --brand-blue-accessible-light: #0033cc;
+}
+
+html.dark.high-contrast {
+  --text-body: #ffffff;
+  --text-heading: #ffffff;
+  --surface-page: #000000;
+  --surface-card: #000000;
+  --surface-subtle: #111111;
+  --border-subtle: #ffffff;
+  --action-fill: #66b3ff;
+  --action-label: #000000;
+  --focus-ring: #ffffff;
+  --brand-blue-accessible-light: #66b3ff;
+}

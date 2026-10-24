@@ -1,0 +1,270 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+@import "../styles/typography.css";
+@import "../styles/animations.css";
+
+@theme inline {
+  --color-background: var(--surface-page);
+  --color-foreground: var(--text-body);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-google-sans);
+  --radius-control: var(--radius-control);
+  --radius-card: var(--radius-card);
+}
+
+* {
+  border-color: var(--border-subtle);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--surface-page);
+  color: var(--text-body);
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: var(--action-fill);
+  color: var(--action-label);
+  padding: 0.75rem 1rem;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+.prose-nbh {
+  max-width: 70ch;
+}
+
+.prose-nbh p + p {
+  margin-top: 1rem;
+}
+
+/*
+ * Dark surfaces: always use near-white text.
+ * Uses higher specificity + !important so typography.css / Tailwind cannot leave dark ink on dark backgrounds.
+ */
+.on-dark {
+  color: #ffffff !important;
+  --text-body: #ffffff;
+  --text-heading: #ffffff;
+}
+
+/*
+ * Force near-white copy on dark surfaces, but never paint light-tint
+ * status pills / readable chips (they need dark ink on pale fills).
+ */
+.on-dark
+  :is(h1, h2, h3, h4, h5, h6, p, span, li, label, dt, dd, small, strong, em):not(
+    .status-badge,
+    .status-badge *,
+    [data-contrast="readable"],
+    [data-contrast="readable"] *
+  ) {
+  color: #ffffff !important;
+}
+
+.on-dark a {
+  color: #9dd4ff !important;
+}
+
+.on-dark a:hover {
+  color: #ffffff !important;
+}
+
+.on-dark .text-muted,
+.on-dark [data-muted="true"] {
+  color: rgba(255, 255, 255, 0.78) !important;
+}
+
+/*
+ * Primary buttons always use white label text on brand blue.
+ */
+.on-dark a[class*="bg-[#1E6EF4]"],
+.on-dark button[class*="bg-[#1E6EF4]"],
+.on-dark a[class*="bg-[var(--action-fill)]"],
+.on-dark button[class*="bg-[var(--action-fill)]"],
+.on-dark .btn-primary,
+.on-dark a.btn-primary,
+.on-dark button.btn-primary,
+.on-dark .btn-light,
+.on-dark a.btn-light,
+.on-dark button.btn-light {
+  color: #ffffff !important;
+  background: #1e6ef4 !important;
+}
+
+/* Hero search sits on dark hero but must keep dark readable field text */
+.on-dark .hero-search,
+.on-dark .hero-search :is(input, select, option, label, span, p) {
+  color: #3a3a3c !important;
+}
+
+.on-dark .hero-search input::placeholder {
+  color: rgba(58, 58, 60, 0.55) !important;
+}
+
+.on-dark .hero-search button {
+  color: #ffffff !important;
+  background: #1e6ef4 !important;
+}
+
+/*
+ * Status badges / readable chips: always dark ink on light tint fills.
+ * Inline styles + these rules beat .on-dark white text cascade.
+ */
+.status-badge,
+.status-badge .status-badge__label,
+[data-contrast="readable"],
+[data-contrast="readable"] .status-badge__label {
+  color: #3a3a3c !important;
+}
+
+.status-badge[data-tone="success"],
+.status-badge[data-tone="success"] .status-badge__label,
+.status-badge[data-tone="success"][data-contrast="readable"] {
+  color: #0f7a45 !important;
+  background-color: #e8f7ef !important;
+}
+
+.status-badge[data-tone="warning"],
+.status-badge[data-tone="warning"] .status-badge__label,
+.status-badge[data-tone="warning"][data-contrast="readable"] {
+  color: #9a6700 !important;
+  background-color: #fff6e0 !important;
+}
+
+.status-badge[data-tone="error"],
+.status-badge[data-tone="error"] .status-badge__label,
+.status-badge[data-tone="error"][data-contrast="readable"] {
+  color: #b42318 !important;
+  background-color: #fef3f2 !important;
+}
+
+.status-badge[data-tone="info"],
+.status-badge[data-tone="info"] .status-badge__label,
+.status-badge[data-tone="info"][data-contrast="readable"] {
+  color: #0b3d91 !important;
+  background-color: #eff6ff !important;
+}
+
+.status-badge[data-tone="neutral"],
+.status-badge[data-tone="neutral"] .status-badge__label,
+.status-badge[data-tone="neutral"][data-contrast="readable"] {
+  color: #3a3a3c !important;
+  background-color: #ffffff !important;
+}
+
+.on-dark .status-badge[data-tone="success"] {
+  background-color: #e8f7ef !important;
+}
+.on-dark .status-badge[data-tone="success"],
+.on-dark .status-badge[data-tone="success"] :is(.status-badge__label, svg) {
+  color: #0f7a45 !important;
+}
+
+.on-dark .status-badge[data-tone="warning"] {
+  background-color: #fff6e0 !important;
+}
+.on-dark .status-badge[data-tone="warning"],
+.on-dark .status-badge[data-tone="warning"] :is(.status-badge__label, svg) {
+  color: #9a6700 !important;
+}
+
+.on-dark .status-badge[data-tone="error"] {
+  background-color: #fef3f2 !important;
+}
+.on-dark .status-badge[data-tone="error"],
+.on-dark .status-badge[data-tone="error"] :is(.status-badge__label, svg) {
+  color: #b42318 !important;
+}
+
+.on-dark .status-badge[data-tone="info"] {
+  background-color: #eff6ff !important;
+}
+.on-dark .status-badge[data-tone="info"],
+.on-dark .status-badge[data-tone="info"] :is(.status-badge__label, svg) {
+  color: #0b3d91 !important;
+}
+
+.on-dark .status-badge[data-tone="neutral"] {
+  background-color: #ffffff !important;
+}
+.on-dark .status-badge[data-tone="neutral"],
+.on-dark .status-badge[data-tone="neutral"] :is(.status-badge__label, svg) {
+  color: #3a3a3c !important;
+}
+
+/* Listing detail content must stay dark on light page surfaces */
+.listing-detail-body {
+  color: var(--text-body);
+}
+
+.listing-detail-body
+  :is(h1, h2, h3, h4, p, li, dt, dd, span, label):not(
+    .status-badge,
+    .status-badge *,
+    [data-contrast="readable"],
+    [data-contrast="readable"] *
+  ) {
+  color: inherit;
+}
+
+.listing-detail-body :is(h1, h2, h3, h4) {
+  color: var(--text-heading);
+}
+
+.portal-sidebar {
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(0, 136, 255, 0.45), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(30, 110, 244, 0.35), transparent 50%),
+    linear-gradient(180deg, #030914 0%, #081827 42%, #0a1f3d 100%) !important;
+  color: #ffffff !important;
+}
+
+.portal-sidebar,
+.portal-sidebar :is(a, p, span, button, h1, h2, h3, label, small) {
+  color: #ffffff !important;
+}
+
+.portal-sidebar a:hover,
+.portal-sidebar button:hover {
+  color: #ffffff !important;
+}
+
+.portal-sidebar .nav-muted {
+  color: rgba(255, 255, 255, 0.62) !important;
+}
+
+.portal-sidebar .nav-active {
+  background: rgba(255, 255, 255, 0.14) !important;
+  color: #ffffff !important;
+}
+
+.portal-sidebar .nav-icon {
+  color: #5cb8ff !important;
+}

@@ -1,0 +1,117 @@
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    --motion-fast: 140ms;
+    --motion-base: 220ms;
+    --motion-slow: 420ms;
+  }
+
+  .fade-in {
+    animation: nbh-fade-in var(--motion-base) ease-out both;
+  }
+
+  .rise-in {
+    animation: nbh-rise-in var(--motion-slow) cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .scale-in {
+    animation: nbh-scale-in var(--motion-slow) cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .stagger-children > * {
+    animation: nbh-rise-in var(--motion-slow) cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .stagger-children > *:nth-child(1) {
+    animation-delay: 0ms;
+  }
+  .stagger-children > *:nth-child(2) {
+    animation-delay: 45ms;
+  }
+  .stagger-children > *:nth-child(3) {
+    animation-delay: 90ms;
+  }
+  .stagger-children > *:nth-child(4) {
+    animation-delay: 135ms;
+  }
+  .stagger-children > *:nth-child(5) {
+    animation-delay: 180ms;
+  }
+  .stagger-children > *:nth-child(6) {
+    animation-delay: 225ms;
+  }
+
+  .hover-lift {
+    transition:
+      transform var(--motion-base) ease,
+      box-shadow var(--motion-base) ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 40px -28px rgba(8, 24, 39, 0.45);
+  }
+
+  .ken-burns {
+    animation: nbh-ken-burns 18s ease-in-out infinite alternate;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-fast: 0ms;
+    --motion-base: 0ms;
+    --motion-slow: 0ms;
+  }
+
+  .fade-in,
+  .rise-in,
+  .scale-in,
+  .stagger-children > *,
+  .ken-burns {
+    animation: none;
+  }
+
+  .hover-lift:hover {
+    transform: none;
+  }
+}
+
+@keyframes nbh-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes nbh-rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes nbh-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes nbh-ken-burns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.06);
+  }
+}

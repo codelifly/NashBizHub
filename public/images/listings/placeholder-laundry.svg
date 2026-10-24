@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Laundry listing placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B3A6E"/>
+      <stop offset="100%" stop-color="#1A5FA8"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <rect x="160" y="90" width="140" height="200" rx="16" fill="#E8F1FB"/>
+  <rect x="340" y="90" width="140" height="200" rx="16" fill="#E8F1FB"/>
+  <circle cx="230" cy="200" r="48" fill="none" stroke="#1A5FA8" stroke-width="10"/>
+  <circle cx="230" cy="200" r="22" fill="#3D8FD9"/>
+  <circle cx="410" cy="200" r="48" fill="none" stroke="#1A5FA8" stroke-width="10"/>
+  <circle cx="410" cy="200" r="22" fill="#3D8FD9"/>
+  <rect x="185" y="110" width="50" height="12" rx="3" fill="#0B3A6E"/>
+  <rect x="365" y="110" width="50" height="12" rx="3" fill="#0B3A6E"/>
+  <circle cx="90" cy="320" r="36" fill="#3D8FD9" opacity="0.3"/>
+  <text x="320" y="360" text-anchor="middle" fill="#E8F1FB" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">NashBizHub</text>
+</svg>
